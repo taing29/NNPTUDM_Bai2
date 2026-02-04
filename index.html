@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>VIEWS</th>
+                </tr>
+            </thead>
+            <tbody id="body_table">
+               
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <!-- <input type="text" id="id_txt"/> -->
+        <input type="text" id="title_txt" placeholder="Title"/>
+        <input type="text" id="view_txt" placeholder="View"/>
+        <input type="submit" value="Save" onclick="Save()">
+    </div>
+    <hr>
+
+<h3>COMMENTS</h3>
+
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TEXT</th>
+                    <th>POST ID</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="comment_table"></tbody>
+        </table>
+    </div>
+
+    <div>
+        <input type="text" id="cmt_id_txt" placeholder="ID (để trống khi thêm)"/>
+        <input type="text" id="cmt_text_txt" placeholder="Comment text"/>
+        <input type="text" id="cmt_postid_txt" placeholder="Post ID"/>
+        <input type="submit" value="Save Comment" onclick="SaveComment()">
+    </div>
+
+</body>
+</html>
